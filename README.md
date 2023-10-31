@@ -1,57 +1,22 @@
-# Ant Design Pro
+## API 接口开发平台前端
+### 项目介绍
 
-This project is initialized with [Ant Design Pro](https://pro.ant.design). Follow is the quick guide for how to use.
+一个提供 API 接口供开发者调用的平台。
+用户可以注册登录，开通接口调用权限。用户可以浏览接口并调用，且每次调用会进行统计。
+管理员可以发布接口、下线接口、接入接口，以及可视化接口的调用情况、数据。
 
-## Environment Prepare
+### 技术选型
 
-Install `node_modules`:
+#### 前端
 
-```bash
-npm install
-```
+- Ant Design Pro
+- React
+- Ant Design Procomponents
+- Umi
+- Umi Request（Axios 的封装）
 
-or
+### 项目脚手架
 
-```bash
-yarn
-```
+前端：ant design pro 脚手架（https://pro.ant.design/zh-CN/）
 
-## Provided Scripts
 
-Ant Design Pro provides some useful script to help you quick start and build with web project, code style check and test.
-
-Scripts provided in `package.json`. It's safe to modify or add additional script:
-
-### Start project
-
-```bash
-npm start
-```
-
-### Build project
-
-```bash
-npm run build
-```
-
-### Check code style
-
-```bash
-npm run lint
-```
-
-You can also use script to auto fix some lint error:
-
-```bash
-npm run lint:fix
-```
-
-### Test code
-
-```bash
-npm test
-```
-
-## More
-
-You can view full document on our [official website](https://pro.ant.design). And welcome any feedback in our [github](https://github.com/ant-design/ant-design-pro).
