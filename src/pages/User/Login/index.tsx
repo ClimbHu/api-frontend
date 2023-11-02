@@ -106,11 +106,18 @@ const Login: React.FC = () => {
       const res = await userLoginUsingPOST({
         ...values,
       });
+      // 如果登录成功（响应有数据）
       if (res.data) {
+        // 获取当前URL的参训参数
         const urlParams = new URL(window.location.href).searchParams;
-        history.push(urlParams.get('redirect') || '/');
+        // 设置一个100毫秒的定时器
+        // 定时器出发后，导航到重定向URL，如果没有重定向URL，则导航到根路径
+        setTimeout(() => {
+          history.push(urlParams.get('redirect') || '/');
+        }, 100);
+        // 跟新全局状态，设置登录用户的信息
         setInitialState({
-          loginUser: res.data
+          loginUser: res.data,
         });
         return;
       }
